@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS user (
+CREATE TABLE IF NOT EXISTS app_user (
 	id serial,
 	email text NOT NULL,
     phone text,
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS user (
 	preferences json,
     statistics json,
 
-	CONSTRAINT user_primary_key PRIMARY KEY (id),
-	CONSTRAINT user_handle_unique UNIQUE(handle),
-	CONSTRAINT user_email_unique UNIQUE(email)
+	CONSTRAINT app_user_primary_key PRIMARY KEY (id),
+	CONSTRAINT app_user_handle_unique UNIQUE(handle),
+	CONSTRAINT app_user_email_unique UNIQUE(email)
 );

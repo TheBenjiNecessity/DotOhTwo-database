@@ -9,5 +9,5 @@ CREATE TABLE IF NOT EXISTS reviewable (
     info json,
     statistics json,
 
-    CONSTRAINT reviewable_primary_key PRIMARY KEY (id),
+    CONSTRAINT reviewable_primary_key PRIMARY KEY (id)
 );
