@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS app_user (
 	
 	joined timestamp default now(),
 
-	handle text NOT NULL,
+	username text NOT NULL,
 	password text NOT NULL,
 	salt text NOT NULL,
 
