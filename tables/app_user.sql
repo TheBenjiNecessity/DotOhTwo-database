@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS app_user (
 	username text NOT NULL,
 	password text NOT NULL,
 	salt text NOT NULL,
+	roles text NOT NULL,
 
 	content json,
 	settings json,
