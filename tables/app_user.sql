@@ -7,8 +7,8 @@ CREATE TABLE IF NOT EXISTS app_user (
 	joined timestamp default now(),
 
 	username text NOT NULL,
-	password text NOT NULL,
-	salt text NOT NULL,
+	password text,
+	salt text,
 	roles text NOT NULL,
 
 	content json,
