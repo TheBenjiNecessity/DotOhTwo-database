@@ -17,6 +17,6 @@ CREATE TABLE IF NOT EXISTS app_user (
     statistics json,
 
 	CONSTRAINT app_user_primary_key PRIMARY KEY (id),
-	CONSTRAINT app_user_handle_unique UNIQUE(handle),
+	CONSTRAINT app_user_username_unique UNIQUE(username),
 	CONSTRAINT app_user_email_unique UNIQUE(email)
 );
