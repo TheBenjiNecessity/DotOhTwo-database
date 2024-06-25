@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS review (
     content json,
     info json,
 
-    user_id int NOT NULL,
+    app_user_id int NOT NULL,
     reviewable_id int NOT NULL,
 
 	CONSTRAINT review_primary_key PRIMARY KEY (id),
